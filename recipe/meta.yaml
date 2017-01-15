@@ -26,11 +26,13 @@ test:
 
 about:
   home: https://github.com/jmoiron/humanize
-  license: MIT License
-  summary: python humanize utilities
+  license: MIT
+  license_file: LICENCE
+  summary: 'Python humanize utilities.'
 
 extra:
   recipe-maintainers:
     - ericdill
     - licode
     - tacaswell
+    - ocefpaf
