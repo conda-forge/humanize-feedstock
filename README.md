@@ -3,13 +3,25 @@ About humanize
 
 Home: https://github.com/jmoiron/humanize
 
-Package license: MIT License
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: python humanize utilities
+Summary: Python humanize utilities.
 
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/humanize-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/humanize-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/humanize-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/humanize-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/humanize-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/humanize-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/humanize/badges/version.svg)](https://anaconda.org/conda-forge/humanize)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/humanize/badges/downloads.svg)](https://anaconda.org/conda-forge/humanize)
 
 Installing humanize
 ===================
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `humanize` available on your platf
 ```
 conda search humanize --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/humanize-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/humanize-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/humanize-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/humanize-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/humanize-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/humanize-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/humanize/badges/version.svg)](https://anaconda.org/conda-forge/humanize)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/humanize/badges/downloads.svg)](https://anaconda.org/conda-forge/humanize)
 
 
 Updating humanize-feedstock
