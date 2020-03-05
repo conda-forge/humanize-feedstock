@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Python humanize utilities.
+Summary: Python humanize utilities
 
 
 
