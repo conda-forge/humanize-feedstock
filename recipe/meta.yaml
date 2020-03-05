@@ -1,28 +1,31 @@
-{% set version = "0.5.1" %}
+{% set version = "2.0.0" %}
+
 package:
   name: humanize
   version: {{ version }}
 
 source:
-  fn: humanize-{{ version }}.tar.gz
-  url: https://github.com/jmoiron/humanize/archive/{{ version }}.tar.gz
-  sha256: e3f3ac75e647f75eec48c3950385ab7585c1c1cde2a6c1479c1f58e055a3e868
+  url: https://pypi.io/packages/source/h/humanize/humanize-{{ version }}.tar.gz
+  sha256: 1766e8b82772abdf54a0b3620b14b21b36feba5160401838f97d18a4c58c7f71
 
 build:
+  number: 0
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
+    - python >=3.6
     - pip
-    - python
-    - setuptools
-
+    - setuptools_scm
   run:
-    - python
+    - python >=3.6
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - humanize
 
@@ -30,7 +33,7 @@ about:
   home: https://github.com/jmoiron/humanize
   license: MIT
   license_file: LICENCE
-  summary: 'Python humanize utilities.'
+  summary: Python humanize utilities
 
 extra:
   recipe-maintainers:
