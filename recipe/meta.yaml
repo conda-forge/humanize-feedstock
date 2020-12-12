@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: humanize
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/h/humanize/humanize-{{ version }}.tar.gz
-  sha256: fd3eb915310335c63a54d4507289ecc7b3a7454cd2c22ac5086d061a3cbfd592
+  sha256: ab69004895689951b79f2ae4fdd6b8127ff0c180aff107856d5d98119a33f026
 
 build:
   number: 0
@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
     - setuptools_scm
