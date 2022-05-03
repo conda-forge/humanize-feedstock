@@ -30,7 +30,7 @@ test:
     - humanize
 
 about:
-  home: https://github.com/jmoiron/humanize
+  home: https://github.com/python-humanize/humanize
   license: MIT
   license_file: LICENCE
   summary: Python humanize utilities

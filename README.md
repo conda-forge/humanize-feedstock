@@ -1,7 +1,7 @@
 About humanize
 ==============
 
-Home: https://github.com/jmoiron/humanize
+Home: https://github.com/python-humanize/humanize
 
 Package license: MIT
 
