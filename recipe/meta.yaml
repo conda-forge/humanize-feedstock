@@ -18,6 +18,7 @@ requirements:
     - python >=3.7
     - pip
     - setuptools_scm
+    - hatchling
   run:
     - python >=3.7
     - importlib-metadata
