@@ -1,35 +1,35 @@
+{% set name = "humanize" %}
 {% set version = "4.7.0" %}
 
 package:
-  name: humanize
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/h/humanize/humanize-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/humanize-{{ version }}.tar.gz
   sha256: 7ca0e43e870981fa684acb5b062deb307218193bca1a01f2b2676479df849b3a
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3.7
-    - pip
-    - hatchling
+    - python >=3.8
     - hatch-vcs
+    - hatchling
+    - pip
   run:
-    - python >=3.7
-    - importlib-metadata
+    - python >=3.8
 
 test:
-  requires:
-    - pip
-  commands:
-    - pip check
   imports:
     - humanize
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/python-humanize/humanize
