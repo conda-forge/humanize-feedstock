@@ -1,5 +1,5 @@
 {% set name = "humanize" %}
-{% set version = "4.12.2" %}
+{% set version = "4.12.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/humanize-{{ version }}.tar.gz
-  sha256: ce0715740e9caacc982bb89098182cf8ded3552693a433311c6a4ce6f4e12a2c
+  sha256: 8430be3a615106fdfceb0b2c1b41c4c98c6b0fc5cc59663a5539b111dd325fb0
 
 build:
   noarch: python
