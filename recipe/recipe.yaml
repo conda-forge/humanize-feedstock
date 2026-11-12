@@ -1,0 +1,50 @@
+schema_version: 1
+
+context:
+  version: "4.17.0"
+
+package:
+  name: humanize
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/h/humanize/humanize-${{ version }}.tar.gz
+  sha256: 1d6a36c453dbfbb3f0b34601d2e0b4ce5d48d780305cd45714843f0068fde6ac
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - hatch-vcs
+    - hatchling >=1.27
+    - pip
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - humanize
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Python humanize utilities
+  license: MIT
+  license_file: LICENCE
+  homepage: https://github.com/python-humanize/humanize
+  repository: https://github.com/python-humanize/humanize
+  documentation: https://humanize.readthedocs.io/
+
+extra:
+  recipe-maintainers:
+    - ericdill
+    - licode
+    - tacaswell
+    - ocefpaf
