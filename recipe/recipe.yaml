@@ -37,7 +37,7 @@ tests:
 about:
   summary: Python humanize utilities
   license: MIT
-  license_file: PLEASE_ADD_LICENSE_FILE
+  license_file: LICENCE
   homepage: https://github.com/python-humanize/humanize
   repository: https://github.com/python-humanize/humanize
   documentation: https://humanize.readthedocs.io/
