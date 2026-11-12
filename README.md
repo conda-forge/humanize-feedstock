@@ -9,6 +9,10 @@ Package license: MIT
 
 Summary: Python humanize utilities
 
+Development: https://github.com/python-humanize/humanize
+
+Documentation: https://humanize.readthedocs.io/
+
 Current build status
 ====================
 
